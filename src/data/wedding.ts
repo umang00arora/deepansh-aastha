@@ -2,14 +2,14 @@ export const wedding = {
   groom: {
     name: "Deepansh",
     relation: "Son of",
-    father: "[Groom's father's name]",
-    mother: "[Groom's mother's name]",
+    father: "Mr. Neeraj Singhal",
+    mother: "Mrs. Neetu Singhal",
   },
   bride: {
     name: "Astha",
     relation: "Daughter of",
-    father: "[Bride's father's name]",
-    mother: "[Bride's mother's name]",
+    father: "Mr. Mukesh Gupta",
+    mother: "Mrs. Nootan Gupta",
   },
   dateLabel: "16 – 18 January 2027",
   venue: "Rudra Imperial Resort",
@@ -23,10 +23,10 @@ export const families = {
   groom: {
     title: "The Groom's Family",
     members: [
-      { role: "Parents", names: "[Add parents' names]" },
-      { role: "Grandparents", names: "[Add names, if desired]" },
-      { role: "Family", names: "[Add siblings and other family members]" },
-      { role: "Presenting the invitation", names: "[Add all inviting family members]" },
+      { role: "Grandparents", names: "Late Satish Chand Singhal & Late Vijay Laxmi Singhal" },
+      { role: "Parents", names: "Mr. Neeraj Singhal & Mrs. Neetu Singhal" },
+      { role: "Family", names: "Pankaj - Vineeta, Gaurav - Sonal, Abhishek - Akansha, Aman - Aishwarya, Shubham - Aarushi, Rishabh - Ruchi, Umang, Jatin" },
+      { role: "Presenting the invitation", names: "Alka - Ashok, Jyoti, Aastha - Rohit, Shivani - Vaibhav" },
     ],
   }
 };
@@ -44,16 +44,16 @@ export type Ceremony = {
 
 export const ceremonies: Ceremony[] = [
   {
-    id: "haldi", name: "Haldi", date: "Saturday, 16 January 2027", time: "11:00 AM",
-    start: "2027-01-16T11:00:00+05:30",
-    description: "Let the celebrations begin with colours, laughter, blessings, and the warmth of our loved ones.",
-    mood: "marigold", symbol: "✿"
-  },
-  {
-    id: "sangeet", name: "Sangeet", date: "Saturday, 16 January 2027", time: "7:00 PM",
+    id: "sangeet", name: "Godhbharai, Tilak and Sangeet", date: "Saturday, 16 January 2027", time: "4:00 PM",
     start: "2027-01-16T19:00:00+05:30",
     description: "An evening filled with music, dance, laughter, and unforgettable memories as our families come together.",
     mood: "plum", symbol: "♫"
+  },
+  {
+    id: "haldi", name: "Haldi", date: "Saturday, 17 January 2027", time: "11:00 AM",
+    start: "2027-01-16T11:00:00+05:30",
+    description: "Let the celebrations begin with colours, laughter, blessings, and the warmth of our loved ones.",
+    mood: "marigold", symbol: "✿"
   },
   {
     id: "mehndi", name: "Mehndi", date: "Sunday, 17 January 2027", time: "10:00 AM",

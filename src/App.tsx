@@ -137,8 +137,8 @@ function App() {
       <section className="families-section section-pad" id="families">
         <motion.div className="section-kicker" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>02 — THE PEOPLE WHO MAKE US</motion.div>
         <motion.div className="section-heading" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <p className="eyebrow">WITH THE BLESSINGS OF OUR FAMILY</p><h2>Our <em>Family</em></h2>
-          <p>With the love, blessings, and support of our family, we invite you to celebrate this beautiful beginning.</p>
+          <p className="eyebrow">WITH THE BLESSINGS OF</p><h2>Our <em>Family</em></h2>
+          <p>With love, blessings, and support, we invite you to celebrate this beautiful beginning.</p>
         </motion.div>
         <div className="family-grid">
           <motion.article className="family-card groom-family-card" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>
