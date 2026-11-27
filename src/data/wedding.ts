@@ -46,7 +46,7 @@ export type Ceremony = {
 export const ceremonies: Ceremony[] = [
   {
   id: "godbharai-tilak",
-  name: "Godbharai and Tilak",
+  name: "Godhbharai and Tilak",
   date: "Saturday, 16 January 2027",
   time: "4:00 PM",
   start: "2027-01-16T16:00:00+05:30",
@@ -56,11 +56,11 @@ export const ceremonies: Ceremony[] = [
 },
 {
   id: "engagement-sangeet",
-  name: "Engagement and Sangeet",
+  name: "Engagement and The Rhythm Affair (Sangeet)",
   date: "Saturday, 16 January 2027",
   time: "7:00 PM",
   start: "2027-01-16T19:00:00+05:30",
-  description: "The Rhythm Affair — an enchanting evening of music, dance, celebration, and unforgettable memories.",
+  description: "An enchanting evening of music, dance, celebration, and unforgettable memories.",
   mood: "plum",
   symbol: "♫"
 },
@@ -103,8 +103,8 @@ export const ceremonies: Ceremony[] = [
     mood: "saffron", symbol: "✧"
   },
   {
-    id: "phere", name: "Phere", date: "Monday, 18 January 2027", time: "2:00 PM",
-    start: "2027-01-18T14:00:00+05:30",
+    id: "phere", name: "Phere", date: "Monday, 18 January 2027", time: "3:00 PM",
+    start: "2027-01-18T15:00:00+05:30",
     description: "Witness the sacred vows and the beginning of a beautiful journey together.",
     mood: "ruby", symbol: "ॐ"
   },
