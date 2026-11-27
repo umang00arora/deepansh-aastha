@@ -153,7 +153,7 @@ function App() {
       <section className="events-section section-pad" id="celebrations">
         <motion.div className="section-kicker" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>03 — THE WEDDING FESTIVITIES</motion.div>
         <motion.div className="section-heading light-heading" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <p className="eyebrow">SIX MOMENTS · THREE DAYS</p><h2>Let the <em>celebrations</em> begin</h2>
+          <p className="eyebrow">NINE MOMENTS · THREE DAYS</p><h2>Let the <em>celebrations</em> begin</h2>
           <p>Every ritual, every laugh, every little moment — we can't wait to celebrate with you.</p>
         </motion.div>
         <div className="events-list">{ceremonies.map((c, i) => <motion.article className={`event-card ${c.mood}`} key={c.id} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .2 }}>
@@ -166,7 +166,6 @@ function App() {
 
       <section className="countdown-section section-pad">
         <Mandala className="countdown-mandala"/>
-        <p className="eyebrow">THE MOMENT WE'VE BEEN WAITING FOR</p>
         <h2>Until we say <em>“I do”</em></h2>
         <Countdown/>
         <p className="countdown-caption">16 JANUARY 2027 · THE CELEBRATIONS BEGIN</p>
@@ -176,7 +175,7 @@ function App() {
         <motion.div className="section-kicker" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>04 — THE DESTINATION</motion.div>
         <div className="venue-layout">
           <motion.div className="venue-art" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <div className="venue-arch"><div className="venue-arch-inner"><span>✦</span><b>R</b><span>✦</span></div></div>
+            <div className="venue-arch"><div className="venue-arch-inner"><img src="/rudra-imperial-resort.png" alt="Rudra Imperial Resort" className="venue-resort-photo"/></div></div>
             <div className="venue-art-caption">A PLACE FOR OUR<br/>FAVOURITE PEOPLE</div>
           </motion.div>
           <motion.div className="venue-copy" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -198,7 +197,6 @@ function App() {
           <div className="gallery-tile tile-two"><span>TOGETHER</span></div>
           <div className="gallery-tile tile-three"><span>FOREVER, IN THE MAKING</span></div>
         </div>
-        <p className="gallery-note">Your photographs can be added in <code>public/images</code> and connected in the gallery styles.</p>
       </section>
 
     </main>
