@@ -809,16 +809,16 @@ a {
   grid-row: span 2;
   background-image:
     linear-gradient(0deg, rgba(45, 24, 16, 0.1), rgba(45, 24, 16, 0.1)),
-    url("public/pic1n.jpg");
+    url("/pic1n.jpg");
 
     background-size: cover;
     background-repeat: no-repeat;
 }
 .tile-two {
-  background-image: url("public/pic2.jpeg");
+  background-image: url("/pic2.jpeg");
 }
 .tile-three {
-  background-image: url("public/pic3.jpeg");
+  background-image: url("/pic3.jpeg");
 }
 .gallery-note {
   text-align: center;
