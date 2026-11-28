@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap");
 :root {
+    color-scheme: light;
   font-family: "DM Sans", sans-serif;
   color: #33251e;
   background: #f5efe4;
@@ -1299,36 +1300,57 @@ a {
   }
 }
 @media (max-width: 700px) {
+
   .site-header {
     height: 64px;
     padding: 0 20px;
+    position: relative;
+    z-index: 10001;
   }
+
   .desktop-nav,
   .header-rsvp {
-    display: none;
+    display: none !important;
   }
+
   .mobile-menu {
-    display: block;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     border: 0;
     background: none;
     color: #e9d8bd;
+    cursor: pointer;
+    position: relative;
+    z-index: 10002;
+    padding: 8px;
   }
+
   .mobile-nav {
     display: flex;
     position: fixed;
     top: 64px;
     left: 0;
     right: 0;
-    z-index: 29;
+    z-index: 10000;
     background: #2b1c17;
     flex-direction: column;
     padding: 10px 25px 20px;
     overflow: hidden;
+    pointer-events: auto;
   }
+
   .mobile-nav button {
+    display: block;
+    width: 100%;
     text-align: left;
     padding: 13px 0;
+    border: 0;
     border-bottom: 1px solid #ffffff18;
+    background: transparent;
+    color: #e9d8bd;
+    cursor: pointer;
+    pointer-events: auto;
   }
   .hero {
     min-height: 94svh;

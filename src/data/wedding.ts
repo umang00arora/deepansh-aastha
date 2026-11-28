@@ -64,15 +64,26 @@ export const ceremonies: Ceremony[] = [
   mood: "plum",
   symbol: "♫"
 },
+
   {
-    id: "haldi", name: "Haldi", date: "Saturday, 17 January 2027", time: "10:00 AM",
-    start: "2027-01-16T11:00:00+05:30",
+    id: "haldi", name: "Haldi", date: "Sunday, 17 January 2027", time: "10:00 AM",
+    start: "2027-01-17T10:00:00+05:30",
     description: "Let the celebrations begin with colours, laughter, blessings, and the warmth of our loved ones.",
     mood: "marigold", symbol: "✿"
   },
   {
+  id: "phoolo-ki-haldi",
+  name: "Phoolo Ki Haldi",
+  date: "Sunday, 17 January 2027",
+  time: "11:00 AM",
+  start: "2027-01-17T11:00:00+05:30",
+  description: "A beautiful celebration of flowers, blessings and joyful Haldi traditions, dressed in shades of green.",
+  mood: "green",
+  symbol: "🌿"
+},
+  {
     id: "mehndi", name: "Mehndi", date: "Sunday, 17 January 2027", time: "11:00 AM",
-    start: "2027-01-17T10:00:00+05:30",
+    start: "2027-01-17T11:00:00+05:30",
     description: "A beautiful morning filled with intricate henna, joyful moments, and the colours of tradition.",
     mood: "mehndi", symbol: "❋"
   },
@@ -97,8 +108,8 @@ export const ceremonies: Ceremony[] = [
   symbol: "✧"
 },
   {
-    id: "ghudchadi", name: "Ghudchadi", date: "Monday, 18 January 2027", time: "12:00 PM",
-    start: "2027-01-18T12:00:00+05:30",
+    id: "ghudchadi", name: "Ghudchadi", date: "Monday, 18 January 2027", time: "11:00 PM",
+    start: "2027-01-18T11:00:00+05:30",
     description: "The groom's grand traditional procession as the wedding celebrations reach their most exciting moment.",
     mood: "saffron", symbol: "✧"
   },

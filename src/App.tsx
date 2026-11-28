@@ -169,11 +169,23 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  function go(id: string) {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setActive(id);
-    setMenuOpen(false);
-  }
+ function go(id: string) {
+  setMenuOpen(false);
+
+  // Wait for the mobile menu to close before scrolling
+  setTimeout(() => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      window.scrollTo({
+        top: section.getBoundingClientRect().top + window.scrollY - 64,
+        behavior: "smooth",
+      });
+
+      setActive(id);
+    }
+  }, 100);
+}
   async function share() {
     const url = wedding.siteUrl;
     const text = `You're invited to celebrate the wedding of Deepansh & Astha!\n16–18 January 2027\nRudra Imperial Resort, Sitapur.\nExplore the wedding invitation: ${url}`;
@@ -256,7 +268,11 @@ function App() {
             <button
               key={id}
               className={active === id ? "active" : ""}
-              onClick={() => go(id)}
+              onClick={() => {
+                go(id);
+                setMenuOpen(false);
+              
+              }}
             >
               {label}
             </button>
